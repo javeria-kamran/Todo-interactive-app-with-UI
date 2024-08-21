@@ -1,7 +1,7 @@
 function setListName() {
     const listName = document.getElementById('list-name').value;
     if (listName.trim() === '') {
-        alert('Please enter a valid list name.');
+        Swal.fire("Enter something!");;
         return;
     }
     document.getElementById('current-list-name').textContent = listName;
@@ -14,7 +14,12 @@ function addTodo() {
     const input = document.getElementById('todo-input');
     const newTask = input.value.trim();
     if (newTask === '') {
-        alert('Please enter a valid task.');
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Enter a valid task!",
+           
+          });
         return;
     }
     const list = document.getElementById('todo-list');

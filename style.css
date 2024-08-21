@@ -1,28 +1,37 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1e1e1e; 
+    background-color: #050033; /* Default background */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/dark-wavy-background_23-2148399820.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9; /* Background image opacity */
 }
 
-
+/* Container Styles */
 .container {
     width: 100%;
-    max-width: 600px;
-    background: #2c2c2c; 
+    max-width: 400px;
+    background: #050033; /* Dark background similar to the example */
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Dark shadow for depth */
+    margin: 20px; /* Add margin around the container */
 }
 
 /* Header Styles */
 h1 {
-    color: #f5a623; /* Bright orange for header text */
+    color:  #f33144; /* Red color for header text */
     text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
 }
 
 .todo-header {
@@ -31,24 +40,33 @@ h1 {
 }
 
 #current-list-name {
-    color: #f5a623; 
+    color:  #dcfd66; /* Red color for the list name */
+    font-size: 1.2em;
 }
 
-
+/* Intro Section Styles */
 #intro {
     text-align: center;
 }
-
+#list-naming{
+    color: white;
+}
 #list-name {
-    background: #3c3c3c; 
-    color: #fff; 
-    border: 1px solid #444;
-    padding: 10px; 
+    background: #2d2d2d; /* Slightly lighter grey for input */
+    color: #fff; /* White text color for input */
+    border: 1px solid #444; /* Darker grey border */
+    padding: 8px;
+    border-radius: 20px;
+    margin-left: 10px;
 }
 
 #intro button {
-    background-color: #f5a623; /* Bright orange background for button */
+    background-color: #f33144; /* Red background for button */
     color: #fff; /* White text color for button */
+    border-radius: 20px; 
+    padding: 8px;/* Rounded corners for buttons */
+    margin-top: 15px;
+    margin-left: 250px;
 }
 
 /* To-Do App Styles */
@@ -59,30 +77,34 @@ h1 {
 .todo-controls {
     margin-bottom: 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap; /* Allow input and button to wrap */
 }
 
 #todo-input {
+    flex-grow: 1;
     padding: 10px;
-    margin-right: 10px;
-    background: #3c3c3c; /* Slightly lighter grey for input */
+    background: #2d2d2d; /* Slightly lighter grey for input */
     color: #fff; /* White text color for input */
     border: 1px solid #444; /* Darker grey border */
+    box-sizing: border-box; /* Include padding and border in element's width */
 }
 
 button {
-    background-color: #f5a623; /* Bright orange background for buttons */
+    background-color: #ff4b5c; /* Red background for buttons */
     color: #fff; /* White text color for buttons */
     border: none;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 20px; /* Rounded corners for buttons */
     cursor: pointer;
     margin: 5px;
+    flex-shrink: 0; /* Prevent buttons from shrinking */
+    box-sizing: border-box; /* Include padding and border in element's width */
 }
 
 button:hover {
-    background-color: #e59400; /* Slightly darker orange on hover */
+    background-color:  #f33144; /* Slightly darker red on hover */
 }
 
 /* List Styles */
@@ -110,25 +132,20 @@ button:hover {
     .container {
         padding: 10px;
         max-width: 100%;
+        margin: 10px; /* Add margin to ensure space around the container */
     }
 
     .todo-controls {
         flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
+        align-items: stretch;
     }
 
-    #todo-input {
-        margin-right: 0;
-        margin-bottom: 10px;
+    #todo-input, button {
         width: 100%;
-        box-sizing: border-box;
     }
 
     button {
-        width: 100%;
         margin-bottom: 10px;
-        box-sizing: border-box;
     }
 
     .task-buttons {
