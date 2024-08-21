@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #050033; /* Default background */
+    background-color: #1e1e1e; /* Default background */
     margin: 0;
     padding: 0;
     display: flex;
@@ -19,7 +19,7 @@ body {
 .container {
     width: 100%;
     max-width: 400px;
-    background: #050033; /* Dark background similar to the example */
+    background: #000438; /* Dark background similar to the example */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Dark shadow for depth */
@@ -28,7 +28,7 @@ body {
 
 /* Header Styles */
 h1 {
-    color:  #f33144; /* Red color for header text */
+    color: #ff4b5c; /* Red color for header text */
     text-align: center;
     font-family: 'Arial', sans-serif;
     font-size: 1.5em;
@@ -40,33 +40,41 @@ h1 {
 }
 
 #current-list-name {
-    color:  #dcfd66; /* Red color for the list name */
+    color: #f0ff67; /* Red color for the list name */
     font-size: 1.2em;
 }
 
 /* Intro Section Styles */
 #intro {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #list-naming{
     color: white;
+    margin-bottom: 10px;
 }
 #list-name {
     background: #2d2d2d; /* Slightly lighter grey for input */
     color: #fff; /* White text color for input */
     border: 1px solid #444; /* Darker grey border */
-    padding: 8px;
+    padding: 10px;
+    width: 60%;
     border-radius: 20px;
-    margin-left: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+
 }
 
 #intro button {
-    background-color: #f33144; /* Red background for button */
+    background-color: #ff4b5c; /* Red background for button */
     color: #fff; /* White text color for button */
-    border-radius: 20px; 
-    padding: 8px;/* Rounded corners for buttons */
-    margin-top: 15px;
-    margin-left: 250px;
+    border-radius: 20px; /* Rounded corners for buttons */
+    padding: 8px 20px;
+    width: 100%;
+    max-width: 140px; /* Limit the maximum width on large screens */
+    box-sizing: border-box;
 }
 
 /* To-Do App Styles */
@@ -89,6 +97,7 @@ h1 {
     color: #fff; /* White text color for input */
     border: 1px solid #444; /* Darker grey border */
     box-sizing: border-box; /* Include padding and border in element's width */
+    border-radius: 20px;
 }
 
 button {
@@ -104,7 +113,7 @@ button {
 }
 
 button:hover {
-    background-color:  #f33144; /* Slightly darker red on hover */
+    background-color: #e44250; /* Slightly darker red on hover */
 }
 
 /* List Styles */
