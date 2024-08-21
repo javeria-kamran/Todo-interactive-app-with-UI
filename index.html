@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List App</h1>
+        <div id="intro">
+            <label for="list-name">Enter To-Do List Name:</label>
+            <input type="text" id="list-name" placeholder="List Name">
+            <button id="setting" onclick="setListName()">Set List Name</button>
+        </div>
+        <div id="todo-app" style="display: none;">
+            <div class="todo-header">
+                <h2 id="current-list-name">Your To-Do List</h2>
+            </div>
+            <div class="todo-controls">
+                <input type="text" id="todo-input" placeholder="Add a new task">
+                <button onclick="addTodo()">Add</button>
+            </div>
+            <ul id="todo-list"></ul>
+            <button id="deleteAllButton" onclick="deleteAllTodos()" style="display: none;">Delete All</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

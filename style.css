@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: #2c2c2c; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+    margin: 20px; 
+}
+
+
+h1 {
+    color: #f5a623; 
+    text-align: center;
+}
+
+.todo-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#current-list-name {
+    color: #f5a623; 
+}
+
+
+#intro {
+    text-align: center;
+}
+
+#list-name {
+    background: #3c3c3c; 
+    color: #fff; 
+    border: 1px solid #444;
+}
+
+#intro button {
+    background-color: #f5a623; 
+    color: #fff; 
+
+
+#todo-app {
+    text-align: center;
+}
+
+.todo-controls {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#todo-input {
+    flex-grow: 1;
+    padding: 10px;
+    background: #3c3c3c; 
+    color: #fff; 
+    border: 1px solid #444; 
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #f5a623; 
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    flex-shrink: 0;
+    box-sizing: border-box; 
+}
+
+button:hover {
+    background-color: #e59400; 
+}
+
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #444; 
+    color: #fff; 
+}
+
+.task-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .todo-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #todo-input, button {
+        width: 100%;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+    .task-buttons {
+        flex-direction: column;
+    }
+}
+}
