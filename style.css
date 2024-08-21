@@ -1,7 +1,6 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1e1e1e; /* Dark background */
+    background-color: #1e1e1e; 
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,11 +9,11 @@ body {
     height: 100vh;
 }
 
-/* Container Styles */
+
 .container {
     width: 100%;
     max-width: 600px;
-    background: #2c2c2c; /* Medium grey for the to-do list container */
+    background: #2c2c2c; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Dark shadow for depth */
@@ -32,18 +31,19 @@ h1 {
 }
 
 #current-list-name {
-    color: #f5a623; /* Bright orange for the list name */
+    color: #f5a623; 
 }
 
-/* Intro Section Styles */
+
 #intro {
     text-align: center;
 }
 
 #list-name {
-    background: #3c3c3c; /* Slightly lighter grey for input */
-    color: #fff; /* White text color for input */
-    border: 1px solid #444; /* Darker grey border */
+    background: #3c3c3c; 
+    color: #fff; 
+    border: 1px solid #444;
+    padding: 10px; 
 }
 
 #intro button {
